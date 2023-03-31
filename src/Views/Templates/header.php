@@ -2,7 +2,7 @@
     $customer = $data['customerLogin'];
 ?>
 <nav class="text-gray-100 flex bg-gray-900 justify-between items-center px-7 sticky inset-x-0 top-0 z-30" style="padding-top: 2px; padding-bottom: 2px">
-    <a href="<?= BASE_URL ?>/Home/" class="font-medium">Hades Studio</a>
+    <a href="<?= BASE_URL ?>/Home/" class="font-medium hover:text-gray-200 text-decoration-none">Hades Studio</a>
     <div class="flex items-center divide-x divide-gray-100 divide-opacity-60 text-xs">
         <?php if(empty($customer)) { ?>
         <div>

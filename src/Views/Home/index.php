@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require_once "./src/Views/Templates/head.php"; ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<?php require_once "./src/Views/Templates/head.php"; ?>
 </head>
 
 <body>
@@ -54,9 +55,9 @@
                             </div>
                             <?php }?>
 
-                            <div class="grid grid-cols-2 gap-2 absolute w-full bottom-0 left-0 group-hover:translate-y-0 transform translate-y-full transition-all">
-                                <button class="uppercase bg-black text-white text-xs py-3">Mua Ngay</button>
-                                <button class="uppercase bg-black text-white text-xs py-3" value="<?= $product['MaSP'] ?>" id="addtocart">Thêm vào giỏ</button>
+                            <div class="grid grid-cols-2 gap-2 absolute w-full bottom-0 left-0 group-hover:translate-y-0 transform translate-y-full transition-all" id="buy_button">
+                                <button class="btn bg-success text-white text-sm">Mua Ngay</button>
+                                <button class="btn bg-secondary text-white text-xs" value="<?= $product['MaSP'] ?>" id="addtocart">Thêm vào giỏ</button>
                             </div>
                         </div>
                         <div class="text-center pb-3 pt-2 cursor-default">

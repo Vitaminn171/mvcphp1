@@ -2,6 +2,8 @@
 <html lang="en">
 <?php $product = $data['product']; ?>
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <?php require_once "./src/Views/Templates/head.php"; ?>
 </head>
 <body>
@@ -26,8 +28,12 @@
             <main class="grid grid-cols-3">
                 <div class="col-span-2">
                     <div class="grid grid-cols-2 overflow-hidden">
-                        <img src="<?= BASE_URL ?>/public/images/products/<?= $product['Hinh1'] ?>" alt="" class="max-w-full" />
-                        <img src="<?= BASE_URL ?>/public/images/products/<?= $product['Hinh2'] ?>" alt="" class="max-w-full" />
+                        <div class="overflow-hidden">
+                            <img src="<?= BASE_URL ?>/public/images/products/<?= $product['Hinh1'] ?>" alt="" class="max-w-full" />
+                        </div>
+                        <div class="overflow-hidden">
+                            <img src="<?= BASE_URL ?>/public/images/products/<?= $product['Hinh2'] ?>" alt="" class="max-w-full" />
+                        </div>
                     </div>
                 </div>
                 <div class="px-3">
@@ -80,8 +86,8 @@
                                 </button>
                             </div>
                         </div>
-                        <button class="w-full border border-black py-4 mb-2 font-semibold text-xs uppercase hover:bg-black hover:text-white transition-all" id="addcart" value="<?= $product['MaSP'] ?>">Thêm vào giỏ</button>
-                        <a class="w-full border border-black py-4 mb-2 font-semibold text-xs uppercase bg-black text-white block text-center" href="<?= BASE_URL ?>/Cart/index">Mua ngay</a>
+                        <button class="btn btn-white w-full border border-black py-3 mb-1 text-sm uppercase text-center" id="addcart" value="<?= $product['MaSP'] ?>">Thêm vào giỏ</button>
+                        <a class="btn btn-success w-full py-3 mb-1 text-sm uppercase text-white text-center" href="<?= BASE_URL ?>/Cart/index">Mua ngay</a>
                     </form>
                     <button class="underline mb-2 text-gray-600">Hướng dẫn chọn size</button>
                     <div class="text-gray-800">

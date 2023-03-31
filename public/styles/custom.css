@@ -167,12 +167,47 @@ ul{
 
 
 /*Zoom image while hover*/
-.max-w-full:hover {
+div.group div a .max-w-full:hover {
   -ms-transform: scale(1.25); /* IE 9 */
   -webkit-transform: scale(1.25); /* Safari 3-8 */
   transform: scale(1.25); 
+  transition: transform .4s ease-in-out;
+}
+
+.max-w-full{
+	transition: transform .2s ease-in-out;
 }
 /*Zoom image while hover*/
+
+/* Transition for navbar */
+.sticky ul li{ 
+	transition: all 0.3s ease;
+}
+
+.sticky ul li:hover{ 
+	color: rgb(17 24 39);
+	padding-left: 8px;
+}
+/* Transition for navbar */
+
+
+/* Transition for popup buy button */
+.grid {
+	transition: transform .2s ease-in-out;
+	
+}
+
+button.uppercase{
+	transition: all 0.3s ease;
+}
+
+a {
+	text-decoration: none !important;
+  }
+#addcart:hover{
+	background-color: #d4d4d4;
+  	border-color: #000000;
+}
 
 
 

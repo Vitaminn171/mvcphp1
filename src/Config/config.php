@@ -1,5 +1,5 @@
 <?php
-define("BASE_URL", "http://localhost/mvcphp");
+define("BASE_URL", "http://localhost/mvcphp1");
 
 define('HOST', 'localhost:3307');
  define('USERNAME', 'root');

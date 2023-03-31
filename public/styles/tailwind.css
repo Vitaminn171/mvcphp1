@@ -26418,7 +26418,7 @@ video {
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .line-through {
@@ -26430,7 +26430,7 @@ video {
 }
 
 .group:hover .group-hover\:underline {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .group:hover .group-hover\:line-through {
@@ -26442,7 +26442,7 @@ video {
 }
 
 .focus-within\:underline:focus-within {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .focus-within\:line-through:focus-within {
@@ -26454,7 +26454,7 @@ video {
 }
 
 .hover\:underline:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .hover\:line-through:hover {
@@ -26466,7 +26466,7 @@ video {
 }
 
 .focus\:underline:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .focus\:line-through:focus {
@@ -59400,7 +59400,7 @@ video {
   }
 
   .sm\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .sm\:line-through {
@@ -59412,7 +59412,7 @@ video {
   }
 
   .group:hover .sm\:group-hover\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .group:hover .sm\:group-hover\:line-through {
@@ -59424,7 +59424,7 @@ video {
   }
 
   .sm\:focus-within\:underline:focus-within {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .sm\:focus-within\:line-through:focus-within {
@@ -59436,7 +59436,7 @@ video {
   }
 
   .sm\:hover\:underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .sm\:hover\:line-through:hover {
@@ -59448,7 +59448,7 @@ video {
   }
 
   .sm\:focus\:underline:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .sm\:focus\:line-through:focus {
@@ -92024,7 +92024,7 @@ video {
   }
 
   .md\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .md\:line-through {
@@ -92036,7 +92036,7 @@ video {
   }
 
   .group:hover .md\:group-hover\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .group:hover .md\:group-hover\:line-through {
@@ -92048,7 +92048,7 @@ video {
   }
 
   .md\:focus-within\:underline:focus-within {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .md\:focus-within\:line-through:focus-within {
@@ -92060,7 +92060,7 @@ video {
   }
 
   .md\:hover\:underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .md\:hover\:line-through:hover {
@@ -92072,7 +92072,7 @@ video {
   }
 
   .md\:focus\:underline:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .md\:focus\:line-through:focus {
@@ -124648,7 +124648,7 @@ video {
   }
 
   .lg\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .lg\:line-through {
@@ -124660,7 +124660,7 @@ video {
   }
 
   .group:hover .lg\:group-hover\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .group:hover .lg\:group-hover\:line-through {
@@ -124672,7 +124672,7 @@ video {
   }
 
   .lg\:focus-within\:underline:focus-within {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .lg\:focus-within\:line-through:focus-within {
@@ -124684,7 +124684,7 @@ video {
   }
 
   .lg\:hover\:underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .lg\:hover\:line-through:hover {
@@ -124696,7 +124696,7 @@ video {
   }
 
   .lg\:focus\:underline:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .lg\:focus\:line-through:focus {
@@ -157272,7 +157272,7 @@ video {
   }
 
   .xl\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .xl\:line-through {
@@ -157284,7 +157284,7 @@ video {
   }
 
   .group:hover .xl\:group-hover\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .group:hover .xl\:group-hover\:line-through {
@@ -157296,7 +157296,7 @@ video {
   }
 
   .xl\:focus-within\:underline:focus-within {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .xl\:focus-within\:line-through:focus-within {
@@ -157308,7 +157308,7 @@ video {
   }
 
   .xl\:hover\:underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .xl\:hover\:line-through:hover {
@@ -157320,7 +157320,7 @@ video {
   }
 
   .xl\:focus\:underline:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .xl\:focus\:line-through:focus {
@@ -189896,7 +189896,7 @@ video {
   }
 
   .\32xl\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .\32xl\:line-through {
@@ -189908,7 +189908,7 @@ video {
   }
 
   .group:hover .\32xl\:group-hover\:underline {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .group:hover .\32xl\:group-hover\:line-through {
@@ -189920,7 +189920,7 @@ video {
   }
 
   .\32xl\:focus-within\:underline:focus-within {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .\32xl\:focus-within\:line-through:focus-within {
@@ -189932,7 +189932,7 @@ video {
   }
 
   .\32xl\:hover\:underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .\32xl\:hover\:line-through:hover {
@@ -189944,7 +189944,7 @@ video {
   }
 
   .\32xl\:focus\:underline:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .\32xl\:focus\:line-through:focus {
