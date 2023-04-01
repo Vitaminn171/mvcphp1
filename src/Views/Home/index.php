@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <?php require_once "./src/Views/Templates/head.php"; ?>
 </head>
 
 <body>
-    <?php require_once "./src/Views/Templates/header.php" ?>
+    
+    <?php
+        
+        // getNavBar($data['collections']);
+    ?>
     <div class="flex">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
 
         <div class="flex-1 px-1">
             <!-- slide banner -->
             <div class="relative">
                 <ul>
-                    <li class="mt-1">
+                    <li>
                         <img src="<?= BASE_URL ?>/public/images/banner/slideshow_3.webp" alt="" class="w-full" />
                     </li>
                 </ul>

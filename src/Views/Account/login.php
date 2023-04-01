@@ -5,11 +5,13 @@
 </head>
 
 <body>
-    <?php require_once "./src/Views/Templates/header.php" ?>
+    <?php 
+    //require_once "./src/Views/Templates/header.php";
+     ?>
     <div class="flex">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
         <div class="flex-1 px-5">
         <!-- action="<?= BASE_URL ?>/Account/checklogin" method="post" -->

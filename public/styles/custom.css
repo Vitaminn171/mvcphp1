@@ -180,13 +180,13 @@ div.group div a .max-w-full:hover {
 /*Zoom image while hover*/
 
 /* Transition for navbar */
-.sticky ul li{ 
+.nav-item{ 
 	transition: all 0.3s ease;
 }
 
-.sticky ul li:hover{ 
+.nav-item:hover{ 
 	color: rgb(17 24 39);
-	padding-left: 8px;
+	padding-left: 10px;
 }
 /* Transition for navbar */
 
@@ -209,5 +209,9 @@ a {
   	border-color: #000000;
 }
 
+
+.collapse{
+	text-align: center;
+}
 
 
