@@ -62,22 +62,36 @@
     </button>
     <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a href="<?= BASE_URL ?>/Collection/" class="nav-link text-black text-xl hover:text-gray-600 text-decoration-none ">Shop All</a></li>
+            <li class="nav-item"><a href="<?= BASE_URL ?>/Collection/" class="nav-link text-xl">Shop All</a></li>
             <?php 
                 foreach ($data['collections'] as $value) { ?>
-                    <li class="nav-item"><a href="<?= BASE_URL ?>/Collection/Show/<?= $value['id']; ?>" class="nav-link text-black text-decoration-none text-xl hover:text-gray-600"><?= $value['name']; ?></a></li>
+                    <li class="nav-item"><a href="<?= BASE_URL ?>/Collection/Show/<?= $value['id']; ?>" class="nav-link text-xl"><?= $value['name']; ?></a></li>
             <?php } ?>
         </ul>
-        <ul class="navbar-nav d-flex">
-            <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Link</a>
-            </li>
+        <ul class="navbar-nav">
+        <li class="nav-item" id="right-nav">
+                        <a id="search" class="nav-link">
+                            <i class="fas fa-search fa-lg"></i> Search
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cart">Giỏ Hàng (<span id="totalItem"><?= $data['totalCartItem'] ?></span>)</a>
+                    </li>
+            <?php if(empty($customer)) { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= BASE_URL ?>/Account/Login"><i class="far fa-user fa-lg"></i></a>
+                    </li>
+                    <?php } else { ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= BASE_URL ?>/Account/"><i class="far fa-user fa-lg"></i> <?= $customer['TenKhachHang'] ?></a>
+                    </li>
+                    
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="<?= BASE_URL ?>/Account/Index/Logout">/ Đăng xuất</a>
+                    </li>
+                    <?php } ?>
+                    
         </ul>
         
     </div>

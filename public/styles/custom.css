@@ -1,3 +1,6 @@
+
+
+
 #sidebarwrap {
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.35s;
@@ -180,13 +183,18 @@ div.group div a .max-w-full:hover {
 /*Zoom image while hover*/
 
 /* Transition for navbar */
+.nav-item a{ 
+	color: #1d1d1d;
+}
+.nav-item a:hover{ 
+	color: #b1b1b1;
+}
 .nav-item{ 
 	transition: all 0.3s ease;
 }
 
 .nav-item:hover{ 
-	color: rgb(17 24 39);
-	padding-left: 10px;
+	padding-left: 15px;
 }
 /* Transition for navbar */
 
