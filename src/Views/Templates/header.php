@@ -52,7 +52,7 @@
     </div>
 </nav> -->
 
-<nav class="navbar navbar-expand-sm sticky-top shadow" style="padding-top: 2px; padding-bottom: 2px; background-color: #f1f1f1">
+<nav class="navbar navbar-expand-sm sticky-top shadow" style="padding-top: 2px; padding-bottom: 2px; background-color: #f1f1f1" id="header">
   <div class="container-fluid">
         <a class="navbar-brand" href="<?= BASE_URL ?>/Home/"> 
             <img src="<?= BASE_URL ?>/public/images/logo.webp" alt="" style="width: 200px"> 

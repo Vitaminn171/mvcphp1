@@ -7,12 +7,16 @@ const sideBarTitle = document.querySelector("#sidebar-title");
 const searchForm = document.querySelector("#searchForm")
 const cartPanel = $("#cartPanel");
 const searchItem = $("#searchProduct");
+const header= $("#header");
 
 /*----------- Mở sidebar  -------------*/
 const openSidebar = element => {
   element && element.removeClass("hidden");
+  sidePanel.addClass("shadow");
   sidebarWrap.removeClass("hidden");
   sidePanel.removeClass("hidden");
+  header.removeClass("sticky-top");
+  // sidebarWrap.removeClass("badge");
 }
 
 /*------------ Đóng sidebar -------------*/
@@ -29,7 +33,7 @@ const closeSideBar = () => {
 
     !cartPanel.hasClass("hidden") && cartPanel.addClass("hidden")
   }, 100);
-
+  header.addClass("sticky-top");
   searchItem.html("");
   cartPanel.html("");
   

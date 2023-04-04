@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="<?= BASE_URL ?>/public/styles/custom.css" />
 
-<main id="cartProduct" class="space-y-4">
+<main id="cartProduct" class="space-y-4v">
     <?php
     $total = 0;
     foreach ($data['carts'] as $product) { 
