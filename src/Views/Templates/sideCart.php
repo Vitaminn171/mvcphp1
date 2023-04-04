@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?= BASE_URL ?>/public/styles/custom.css" />
+
 <main id="cartProduct" class="space-y-4">
     <?php
     $total = 0;
@@ -31,8 +33,12 @@
         <p>Tổng Tiền:</p>
         <p class="font-medium" id="total"><?= number_format($total,0,",",".") ?> <sup>vnđ</sup></p>
     </div>
-    <div class="flex justify-between mb-2">
-        <a class="uppercase bg-black text-white text-xs px-6 py-3" href="<?= BASE_URL ?>/Cart/">Xem Giỏ Hàng</a>
-        <a class="uppercase bg-black text-white text-xs px-6 py-3" href="<?= BASE_URL ?>/Checkout/">Thanh Toán</a>
+    <div class="row">
+        <div class="col">
+            <a href="<?= BASE_URL ?>/Checkout/"><button type="button" class="btn btn-dark border-black rounded-pill pl-3 pr-3" id="checkout">Thanh Toán</button></a>
+        </div>
+        <div class="col">
+            <a href="<?= BASE_URL ?>/Cart/"><button type="button" class="btn btn-light border-black rounded-pill pl-3 pr-3" id="cart">Xem Giỏ Hàng</button></a>
+        </div>
     </div>
 </div>

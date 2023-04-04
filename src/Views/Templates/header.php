@@ -88,7 +88,7 @@
                     
                     <li class="nav-item">
 
-                        <a class="nav-link" href="<?= BASE_URL ?>/Account/Index/Logout">/ Đăng xuất</a>
+                        <a class="nav-link" href="<?= BASE_URL ?>/Account/Index/Logout"> Đăng xuất</a>
                     </li>
                     <?php } ?>
                     

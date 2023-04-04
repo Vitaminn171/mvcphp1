@@ -223,3 +223,12 @@ a {
 }
 
 
+#checkout:hover{
+	background-color: white;
+	color: #000000;
+}
+
+#buyButton:hover{
+	background-color: white;
+	color: #000000;
+}

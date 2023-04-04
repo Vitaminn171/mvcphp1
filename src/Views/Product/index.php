@@ -10,8 +10,8 @@
     <?php require_once "./src/Views/Templates/header.php" ?>
     <div class="flex">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
         <div class="flex-1 px-3">
             <header class="my-5">
@@ -44,10 +44,10 @@
                     </h4>
                     <div class="flex space-x-3 items-center mb-4">
                         <?php if($product['ChietKhau']) { ?>
-                        <h4 class="bg-gray-200 text-red-500 text-sm font-bold py-1 px-2">-<?= $product['ChietKhau'] ?>%</h4>
+                        <h4 class="bg-red-400 text-black text-sm font-bold py-1 px-2">-<?= $product['ChietKhau'] ?>%</h4>
                         <h4 class="font-bold text-lg text-gray-700"><?= number_format(intval($product['DonGia'])*(100 - intval($product['ChietKhau']))/100,0,",",".")  ?> <sup>vnđ</sup></h4>
                         <?php } ?>
-                        <h4 class="text-lg text-gray-700 <?= $product['ChietKhau'] ? "line-through" : "font-semibold" ?>"><?= number_format($product['DonGia'],0,",",".")  ?> <sup>vnđ</sup></h4>
+                        <h4 class="text-lg text-gray-300 <?= $product['ChietKhau'] ? "line-through" : "font-semibold" ?>"><?= number_format($product['DonGia'],0,",",".")  ?> <sup>vnđ</sup></h4>
                     </div>
                     <form action="" class="mb-3">
                         <div class="mb-4">
@@ -86,8 +86,8 @@
                                 </button>
                             </div>
                         </div>
-                        <button class="btn btn-white w-full border border-black py-3 mb-1 text-sm uppercase text-center" id="addcart" value="<?= $product['MaSP'] ?>">Thêm vào giỏ</button>
-                        <a class="btn btn-success w-full py-3 mb-1 text-sm uppercase text-white text-center" href="<?= BASE_URL ?>/Cart/index">Mua ngay</a>
+                        <button class="btn btn-white w-full border border-black text-lg" id="addcart" value="<?= $product['MaSP'] ?>">Thêm vào giỏ</button>
+                        <a href="<?= BASE_URL ?>/Cart/index"><button class="btn btn-dark w-full border-black mt-2 text-lg" id="buyButton">Mua ngay</button></a>
                     </form>
                     <button class="underline mb-2 text-gray-600">Hướng dẫn chọn size</button>
                     <div class="text-gray-800">

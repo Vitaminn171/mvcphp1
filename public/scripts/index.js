@@ -1,4 +1,4 @@
- const BASE_URL = "http://localhost/mvcphp"
+ const BASE_URL = "http://localhost/mvcphp1"
 
 const sidebarWrap = $("#sidebarwrap");
 const searchPanel = $("#searchPanel");
@@ -107,3 +107,19 @@ const addToCartButtons = document.querySelectorAll("#addtocart");
 addToCartButtons.forEach(ele => {
   ele.addEventListener("click",() => addToCart(ele))
 })
+
+
+var tit = document.title;
+var c = 0;
+function writeTitle(){
+  document.title = tit.substring(0,c);
+  if(c==tit.length){
+    c=0;
+    setTimeout("writeTitle()",1000)
+  }else{
+    c++;
+    setTimeout("writeTitle()",200)
+  }
+
+}
+writeTitle()
