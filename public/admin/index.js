@@ -1,4 +1,4 @@
-const BASE_UR = "http://localhost/mvcphp"
+const BASE_UR = "http://localhost/mvcphp1"
 const loc = window.location.pathname;
 const dir = loc.substring(0, loc.lastIndexOf("/"));
 const path = dir.split("/");
@@ -14,7 +14,7 @@ window.onload = () => {
   switch (currentURL) {
     case "":
     case "index":
-    case "mvcphp":
+    case "mvcphp1":
     case "admin":
     case "dashboard":
       changeActive(0);
