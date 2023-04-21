@@ -11,8 +11,8 @@
     <?php require_once "./src/Views/Templates/header.php" ?>
     <div class="flex">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
         <div class="flex-1 px-3">
             <header class="my-5">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div>
-                        <button class="bg-black text-gray-200 px-4 py-3 rounded hover:bg-gray-800" type="submit" name="submitBtn">Hoàn tất đơn hàng</button>
+                        <button class="bg-black text-gray-200 px-4 py-3 mb-5 rounded hover:bg-gray-800" type="submit" name="submitBtn">Hoàn tất đơn hàng</button>
                     </div>
                 </div>
                 <div class="col-span-4 pl-5 space-y-5 divide-y-2 divide-gray-100 ">
@@ -157,5 +157,5 @@
     <script src="<?= BASE_URL ?>/public/scripts/cartPage.js"></script>
     <script src="<?= BASE_URL ?>/public/scripts/checkout.js?v=2"></script>
 </body>
-
+<?php require_once "./src/Views/Templates/footer.php" ?>
 </html>

@@ -1,3 +1,10 @@
+/**
+ * This is a JavaScript function that handles the creation of an inventory receipt, allowing users to
+ * add products to a table and submit the data to a server.
+ * @param value - The value parameter is a variable that contains the value of the input field with the
+ * id "updateQuantity". It is used in the updateQuantityDOM function to update the quantity displayed
+ * on the webpage.
+ */
 var items = []
         const updateQuantityDOM = (value) => {
             document.querySelector("#new").innerHTML = `

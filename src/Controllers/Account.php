@@ -17,12 +17,14 @@ class Account extends CustomerController
                 "totalCartItem" => $this->totalCartItem
             ]);
         } else {
-            if(strtolower($this->params[0]) === "logout") {
+            if(isset($this->params[0]) && !empty($this->params[0]) && strtolower($this->params[0]) === "logout") {
                 unset($_SESSION['CustomerLogin']);
                 $this->customerLogin = [];
                 header("Location: ".BASE_URL);
             }
-            else $this->viewOrder();
+            else 
+                $this->viewOrder();
+                
         }
     }
 

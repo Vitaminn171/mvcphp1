@@ -6,10 +6,10 @@
 
 <body>
     <?php require_once "./src/Views/Templates/header.php" ?>
-    <div class="flex">
+    <div class="container flex">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
         <div class="flex-1 px-3">
 
@@ -89,5 +89,5 @@
     </div>
     <?php require_once "./src/Views/Templates/sidebar.php" ?>
 </body>
-
+<?php require_once "./src/Views/Templates/footer.php" ?>
 </html>

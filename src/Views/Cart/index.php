@@ -7,10 +7,10 @@
 
 <body>
     <?php require_once "./src/Views/Templates/header.php" ?>
-    <div class="flex">
+    <div class="flex mb-20">
         <?php
-        require_once "./src/Views/Templates/navbar.php";
-        getNavBar($data['collections']);
+        // require_once "./src/Views/Templates/navbar.php";
+        // getNavBar($data['collections']);
         ?>
         <div class="flex-1 px-3">
             <header class="my-5">
@@ -92,8 +92,8 @@
             </main>
 
             <!-- Gợi ý sản phẩm -->
-            <div class="mt-10 mb-6">
-                <h4 class="uppercase mb-4 font-semibold text-gray-900">sản phẩm liên quan</h4>
+            <div class="mt-10">
+                <!-- <h4 class="uppercase mb-4 font-semibold text-gray-900">sản phẩm liên quan</h4> -->
                 <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 px-4">
 
 
@@ -125,6 +125,6 @@
     </div>
     <?php require_once "./src/Views/Templates/sidebar.php" ?>
     <script src="<?= BASE_URL ?>/public/scripts/cartPage.js?v=2"></script>
+    <?php require_once "./src/Views/Templates/footer.php" ?>
 </body>
-
 </html>

@@ -120,7 +120,10 @@ class BaseModel extends DataBase{
         while($row = mysqli_fetch_assoc($query) ) {
             array_push($data,$row);
         }
-
-        return $isSingleRecord ? $data[0] : $data;
+        if (!empty($data)) {
+            return $isSingleRecord ? $data[0] : $data;
+        } else {
+            // Handle the case where $data is empty or undefined here
+        }
     }
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 $customer = $data['customerLogin'];
+
 ?>
 
 <head>
@@ -17,6 +18,7 @@ $customer = $data['customerLogin'];
         <?php
         // require_once "./src/Views/Templates/navbar.php";
         // getNavBar($data['collections']);
+        
         ?>
         <div class="flex-1 px-5">
             <div class="w-full">
@@ -28,7 +30,8 @@ $customer = $data['customerLogin'];
                     <h3 class="text-base text-gray-700"><?= $customer['DiaChi'] ?></h3>
                 </div>
                 <div class="my-4 w-2/3 border-8 p-3">
-                    <?php if(0) { ?>
+                    <?php 
+                    if(0) { ?>
                     <div class=" text-gray-700">
                         Bạn chưa mua sản phẩm
                     </div>
@@ -64,7 +67,9 @@ $customer = $data['customerLogin'];
                             </tbody>
                         </table>
                     </div>
-                    <?php } ?>
+                    <?php } 
+                    
+                    ?>
                 </div>
             </div>
         </div>

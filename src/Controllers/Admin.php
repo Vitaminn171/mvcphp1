@@ -14,7 +14,7 @@ class Admin extends AdminController
         if(empty($this->adminLogin)) {
             parent::view("Admin.Login.index", []);
         } else {
-            if(strtolower($this->params[0]) === "logout") {
+            if(isset($this->params[0]) && !empty($this->params[0]) && strtolower($this->params[0]) === "logout") {
                 unset($_SESSION['AdminLogin']);
                 $this->adminLogin = [];
                 header("Location: ".BASE_URL."/Admin/");
