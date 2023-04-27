@@ -45,6 +45,7 @@
             <div class="container">
                 <main class="mb-10 grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 px-4" id="indexProduct">
                     <?php
+                    
                     foreach($data['latestProduct'] as $product) {
                     ?>
                         <div class="group cursor-pointer">
